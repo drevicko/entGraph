@@ -52,7 +52,7 @@ You need to run the entailment.vector.EntailGraphFactoryAggregator using:
 
 java -Xmx100G -cp lib/*:bin  entailment.vector.EntailGraphFactoryAggregator
 
-**Step 11** The global learning: Run graph.softConst.TypePropagateMN. A few parameters might need to be set in constants.ConstantsGraphs as follows:
+**Step 11**: The global learning: Run graph.softConst.TypePropagateMN. A few parameters might need to be set in constants.ConstantsGraphs as follows:
 
   1. featName is the feature name to be used, which is by default BINC score.
   2. root is the folder address storing the output of step 10.
@@ -63,4 +63,4 @@ A few more parameters in constants.ConstantsSoftConst:
   1. numThreads, which I set that to 60 for a machine with 20 cpus, because not all the threads will run together. But you might need to change it.
   2. numIters is the number of iterations. lambda, lambda_2 and tau are set by default for Cross-Graph + Paraphrase-Resolution global soft constraints experiments, but can be tuned for another dataset.
 
-
+**Step 12**: Please follow the instructions outlined in xxx to test the grahps on the entailment datasets.
