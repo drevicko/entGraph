@@ -1,3 +1,9 @@
+This is the implementation for the following paper:
+
+Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Hosseini, Nathanael Chambers, Siva Reddy, Xavier Holt, Shay B. Cohen, Mark Johnson, and Mark Steedman, Transactions of the Association for Computational Linguistics (TACL 2018).
+
+### Setting up the code
+
 After cloning the entGraph project, you need to put these folders inside the entGraph folder:
 
 https://worksheets.codalab.org/bundles/0x21ba95ba21834dee8940c7cb69baa3cb/
