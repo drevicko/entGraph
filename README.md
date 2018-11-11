@@ -6,40 +6,29 @@ Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Ho
 
 Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments. You can download all the additional necessary data from from https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/ except specified otherwise.
 
-* Clone the entGraph project
+1. Clone the entGraph project
 
-* Download and add lib and lib_data folders inside the entGraph folder.
+2. Download and add lib and lib_data folders inside the entGraph folder.
 
 3. Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
 
-4. You can simply download NewsSpike_CCG_parsed.json to your preferred location, or do the following to parse the data (or your own corpus) into predicate argument structure using the CCG parser.
+4. You can simply download NewsSpike_CCG_parsed.json to your preferred location and skip to step xxx, or do steps xxx to xxx  to parse the NewsSpike corpus (or your own corpus) into predicate argument structure using the CCG parser.
 
-   1. Download the NewsSpike Corpus from https://www.cs.washington.edu/node/9473/ and copy the data folder inside entGraph.
+5. Download the NewsSpike Corpus from https://www.cs.washington.edu/node/9473/ and copy the data folder inside entGraph.
    
-   2. Split the input json file line by line:
+6. Split the input json file line by line: run entailment.Util.convertReleaseToRawJson(inputJsonAddress) 1>rawJsonAddress (by changing Util's main function), where inputJsonAddress should be by default "data/release/crawlbatched". Run the code as "java -cp lib/*:bin entailment.Util "data/release/crawlbatched" 1>news_raw.json"
 
-run Util.convertReleaseToRawJson(inputJsonAddress) 1>rawJsonAddress (by changing Util's main function), where inputJsonAddress should be by default "data/release/crawlbatched".
-
-Run the code as "java -cp lib/*:bin convertReleaseToRawJson("data/release/crawlbatched") 1>newsC_raw.json
-
-   
-
-A) Extract binary relations from the input json file:
-
-
-2) run this bash script: /disk/data/darkstar2/s1583634/java/graph-parser/prArgs2.sh
+7) Extract binary relations from the input json file: Run the bash script: prArgs.sh (This takes about 12 hours on the servers I used with 20 threads.)
 
 Change the input and output address as necessary
 
 example:
 
-fName=news_rawC.json
-oName1=predArgsC_gen.txt (binary relations with at least one Named Entity argument).
-oName2=predArgsC_NE.txt (binary relations with two NE arguments)
+fName=news_raw.json
+oName1=predArgs_gen.txt (binary relations with at least one Named Entity argument, which is used in our experiments).
+oName2=predArgs_NE.txt (binary relations with two NE arguments).
 
-I usually use oName1 output, but you might want to use oName2.
-
-4) Run entailment.Util.java (function convertPredArgsToJsonUnsorted) with these arguments: predArgsC_gen.txt true true 120000000 aida/newsC_linked.json 1>newsC_gen.json
+4)  Run entailment.Util (function convertPredArgsToJsonUnsorted) with these arguments: predArgsC_gen.txt true true 120000000 aida/newsC_linked.json 1>newsC_gen.json
 
 predArgsC_gen.txt: output of 2
 aida/news_linked.json: output of NE linking
