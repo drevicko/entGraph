@@ -20,7 +20,7 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 **Step 7**: Extract binary relations from the input json file: Run the bash script: prArgs.sh (This takes about 12 hours on the servers I used with 20 threads.) Change the input and output address as necessary.
 
-The number of threads is a parameter which might need to be changed in Constants.ConstantsParsing. Please keep the other parameters unchanged.
+The number of threads is a parameter which might need to be changed in constants.ConstantsParsing. Please keep the other parameters unchanged.
 
 example:
 
@@ -36,13 +36,23 @@ predArgs_gen.txt: output of step 7.
 aida/news_linked.json: output of step 8.
 120000000 is an upper bound on the number of lines of the corpus (this might need to be changed for a new corpus). For larger corpora, instead of convertPredArgsToJson, you can use convertPredArgsToJsonUnsorted which will get less memory, but the output isn't sorted (this doesn't change any of the results for this paper).
 
-**Step 10**: Extract the interim outputs
+**Step 10**: Extract the interim outputs:
+
+You might need to set a few parameters in constants.ConstantsAgg:
+
+  1. minArgPairForPred is C_1 in the paper, which is set to 3 by default.
+
+  2. minPredForArgPair is C_2 in the paper, which is set to 3 by default.
+
+  3. relAddress is the output of step 9.
+
+  4. simsFolder is where the final output will be stored.
 
 You need to run the entailment.vector.EntailGraphFactoryAggregator using:
 
 java -Xmx100G -cp lib/*:bin  entailment.vector.EntailGraphFactoryAggregator
 
-I've set the parameters at the top of the file (it was more convenient at the time to have them there :) ). You can see two cutoffs that are set to 40, but of course you can change them. For NewsSpike, I had them 3, for news crawl, it could be more.
 
-relAddress is the output of the A.4 step. You should change that.
-simsFolder is where the final output will be stored
+
+
+
