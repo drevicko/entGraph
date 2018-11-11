@@ -1,19 +1,26 @@
 This is the implementation for the following paper:
 
-Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Hosseini, Nathanael Chambers, Siva Reddy, Xavier Holt, Shay B. Cohen, Mark Johnson, and Mark Steedman, Transactions of the Association for Computational Linguistics (TACL 2018).
+Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Hosseini, Nathanael Chambers, Siva Reddy, Xavier Holt, Shay B. Cohen, Mark Johnson, and Mark Steedman. Transactions of the Association for Computational Linguistics (TACL 2018).
 
 ### Setting up the code
 
-After cloning the entGraph project, you need to put these folders inside the entGraph folder:
+Please follow the below instructions to 
 
-https://worksheets.codalab.org/bundles/0x21ba95ba21834dee8940c7cb69baa3cb/
-https://worksheets.codalab.org/bundles/0x91c4fc781be342d19c2acb4d59058d83/
+1) Clone the entGraph project
+
+2) Download and add lib and lib_data folders inside the entGraph folder:
 
 
-You should also create a folder called freebase_types inside the entGraph folder and copy this file to it:
 
-https://worksheets.codalab.org/bundles/0x9060f43f11e444d8b8ee22d7956e03f7/
+3) Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it:
 
+https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/
+
+4) You can simply download NewsSpike_CCG_parsed.json to your preferred location:
+
+Or, do the following steps.
+
+Download the NewsSpike Corpus
 
 A) Extract binary relations from the input json file:
 
