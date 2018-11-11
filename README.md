@@ -6,7 +6,7 @@ Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Ho
 
 Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments. You can download all the additional necessary data from from https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/ except specified otherwise.
 
-Markup: 1. Clone the entGraph project
+1. Clone the entGraph project
 
 2. Download and add lib and lib_data folders inside the entGraph folder.
 
