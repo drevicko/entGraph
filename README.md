@@ -61,7 +61,6 @@ java -Xmx100G -cp lib/*:bin  entailment.vector.EntailGraphFactoryAggregator
 A few more parameters in constants.ConstantsSoftConst:
 
   1. numThreads, which I set that to 60 for a machine with 20 cpus, because not all the threads will run together. But you might need to change it.
-
   2. numIters is the number of iterations. lambda, lambda_2 and tau are set by default for Cross-Graph + Paraphrase-Resolution global soft constraints experiments, but can be tuned for another dataset.
 
 
