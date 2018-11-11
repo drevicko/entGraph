@@ -14,7 +14,7 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 4. You can simply download NewsSpike_CCG_parsed.json to your preferred location, or do the following to parse the data (or your own corpus) into predicate argument structure using the CCG parser.
 
-..1. Download the NewsSpike Corpus from 
+⋅⋅1. Download the NewsSpike Corpus from 
 
 A) Extract binary relations from the input json file:
 
