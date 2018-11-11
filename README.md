@@ -12,7 +12,7 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 **Step 3**: Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
 
-**Step 4**: You can simply download the linked and parsed NewsSpike corpus (NewsSpike_CCG_parsed.json) to your preferred location and skip to step xxx, or do steps xxx to xxx  to parse and link the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
+**Step 4**: You can simply download the linked and parsed NewsSpike corpus (NewsSpike_CCG_parsed.json) to your preferred location and skip to step 10, or do steps 5 to 9 to parse and link the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
 
 **Step 5**: Download the NewsSpike Corpus from https://www.cs.washington.edu/node/9473/ and copy the data folder inside entGraph.
    
@@ -44,7 +44,7 @@ You might need to set a few parameters in constants.ConstantsAgg:
 
   2. minPredForArgPair is C_2 in the paper, which is set to 3 by default.
 
-  3. relAddress is the output of step 9.
+  3. relAddress is the output of step 9 (or 4).
 
   4. simsFolder is where the final output will be stored.
 
