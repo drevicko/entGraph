@@ -52,7 +52,10 @@ You need to run the entailment.vector.EntailGraphFactoryAggregator using:
 
 java -Xmx100G -cp lib/*:bin  entailment.vector.EntailGraphFactoryAggregator
 
+**Step 11** The global learning: Run graph.softConst.TypePropagateMN. The parameters can be set in constants.ConstantsSoftConst:
 
+numThreads, which I set that to 60 for a machine with 20 cpus, because not all the threads will run together. But you might need to change it.
 
+numIters is the number of iterations.
 
 
