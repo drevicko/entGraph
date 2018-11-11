@@ -18,8 +18,9 @@ Please follow the below instructions to create entailment graphs and/or replicat
    
 **Step 6**: Split the input json file line by line: run entailment.Util.convertReleaseToRawJson(inputJsonAddress) 1>rawJsonAddress (by changing Util's main function), where inputJsonAddress should be by default "data/release/crawlbatched". Run the code as "java -cp lib/*:bin entailment.Util "data/release/crawlbatched" 1>news_raw.json"
 
-**Step 7**: Extract binary relations from the input json file: Run the bash script: prArgs.sh (This takes about 12 hours on the servers I used with 20 threads.)
-Change the input and output address as necessary
+**Step 7**: Extract binary relations from the input json file: Run the bash script: prArgs.sh (This takes about 12 hours on the servers I used with 20 threads.) Change the input and output address as necessary.
+
+The number of threads is a parameter which might need to be changed in Constants.ConstantsParsing. Please keep the other parameters unchanged.
 
 example:
 
