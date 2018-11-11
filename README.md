@@ -4,23 +4,17 @@ Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Ho
 
 ### Setting up the code
 
-Please follow the below instructions to 
+Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments. You can download all the additional necessary data from from https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/ except specified otherwise.
 
 1) Clone the entGraph project
 
-2) Download and add lib and lib_data folders inside the entGraph folder:
+2) Download and add lib and lib_data folders inside the entGraph folder.
 
+3) Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
 
+4) You can simply download NewsSpike_CCG_parsed.json to your preferred location, or do the following to parse the data (or your own corpus) into predicate argument structure using the CCG parser.
 
-3) Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it:
-
-https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/
-
-4) You can simply download NewsSpike_CCG_parsed.json to your preferred location:
-
-Or, do the following steps.
-
-Download the NewsSpike Corpus
+A) Download the NewsSpike Corpus from 
 
 A) Extract binary relations from the input json file:
 
