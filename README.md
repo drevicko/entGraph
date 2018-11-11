@@ -12,7 +12,7 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 **Step 3**: Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
 
-**Step 4**: You can simply download NewsSpike_CCG_parsed.json to your preferred location and skip to step xxx, or do steps xxx to xxx  to parse the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
+**Step 4**: You can simply download the linked and parsed NewsSpike corpus (NewsSpike_CCG_parsed.json) to your preferred location and skip to step xxx, or do steps xxx to xxx  to parse and link the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
 
 **Step 5**: Download the NewsSpike Corpus from https://www.cs.washington.edu/node/9473/ and copy the data folder inside entGraph.
    
@@ -27,17 +27,15 @@ fName=news_raw.json
 oName1=predArgs_gen.txt (binary relations with at least one Named Entity argument, which is used in our experiments).
 oName2=predArgs_NE.txt (binary relations with two NE arguments).
 
-4)  Run entailment.Util (function convertPredArgsToJsonUnsorted) with these arguments: predArgsC_gen.txt true true 120000000 aida/newsC_linked.json 1>newsC_gen.json
+**Step 8**: Download news_linked.json and put it in folder aida. This is the output of NE linking (In our experiments, we used AIDALight).
 
-predArgsC_gen.txt: output of 2
-aida/news_linked.json: output of NE linking
-/disk/data/darkstar2/s1583634/java/graph-parser/aida/newsC_linked.json
+**Step 9**: Run entailment.Util (function convertPredArgsToJson) with these arguments: predArgs_gen.txt true true 12000000 aida/news_linked.json 1>news_gen.json
 
-Leave the rest as it is.
+predArgs_gen.txt: output of step 7.
+aida/news_linked.json: output of step 8.
+120000000 is an upper bound on the number of lines of the corpus (this might need to be changed for a new corpus). For larger corpora, instead of convertPredArgsToJson, you can use convertPredArgsToJsonUnsorted which will get less memory, but the output isn't sorted (this doesn't change any of the results for this paper).
 
-Forward the output to newsC_gen.json
-
-B) Extract the interim outputs
+**Step 10**: Extract the interim outputs
 
 You need to run the entailment.vector.EntailGraphFactoryAggregator using:
 
