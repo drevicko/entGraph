@@ -14,15 +14,18 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 4. You can simply download NewsSpike_CCG_parsed.json to your preferred location, or do the following to parse the data (or your own corpus) into predicate argument structure using the CCG parser.
 
-   1. Download the NewsSpike Corpus from 
+   1. Download the NewsSpike Corpus from https://www.cs.washington.edu/node/9473/ and copy the data folder inside entGraph.
+   
+   2. Split the input json file line by line:
+
+run Util.convertReleaseToRawJson(inputJsonAddress) 1>rawJsonAddress (by changing Util's main function), where inputJsonAddress should be by default "data/release/crawlbatched".
+
+Run the code as "java -cp lib/*:bin convertReleaseToRawJson("data/release/crawlbatched") 1>newsC_raw.json
+
+   
 
 A) Extract binary relations from the input json file:
 
-1) Split the input json file line by line:
-
-run Util.convertReleaseToRawJson(inputJsonAddress) 1> rawJsonAddress by changing its main function.
-
-for example, java -cp lib/*:bin convertReleaseToRawJson("data/release/crawlbatched") 1>newsC_raw.json
 
 2) run this bash script: /disk/data/darkstar2/s1583634/java/graph-parser/prArgs2.sh
 
