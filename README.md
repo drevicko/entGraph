@@ -30,8 +30,8 @@ oName2=predArgs_NE.txt (binary relations with two NE arguments).
 
 **Step 4.5**: Run entailment.Util (function convertPredArgsToJson) with these arguments: predArgs_gen.txt true true 12000000 aida/news_linked.json 1>news_gen.json
 
-predArgs_gen.txt: output of step 7.
-aida/news_linked.json: output of step 8.
+predArgs_gen.txt: output of step 4.3.
+aida/news_linked.json: output of step 4.4.
 120000000 is an upper bound on the number of lines of the corpus (this might need to be changed for a new corpus). For larger corpora, instead of convertPredArgsToJson, you can use convertPredArgsToJsonUnsorted which will get less memory, but the output isn't sorted (this doesn't change any of the results for this paper).
 
 **Step 5**: Extract the interim outputs:
