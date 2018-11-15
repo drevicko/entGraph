@@ -2,7 +2,7 @@ This is the implementation for the following paper:
 
 Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Hosseini, Nathanael Chambers, Siva Reddy, Xavier Holt, Shay B. Cohen, Mark Johnson, and Mark Steedman. Transactions of the Association for Computational Linguistics (TACL 2018).
 
-All the data can be downloaded from https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/ except specified otherwise.
+All the data can be downloaded from the project's codalab page https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/, except specified otherwise.
 
 
 ### How to Run the Code
