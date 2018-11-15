@@ -65,7 +65,7 @@ A few more parameters in constants.ConstantsSoftConst:
 
 ### Learned Entailment Graphs
 
-**Global Entailment Scores**: Here is a link to the globally consisent entailment scores:
+**Global Entailment Scores**: The globally consistent entailment scores are in "global_graphs.tar.gz".
 
 For each type pair, like person#location, there is a file person#location_sim.txt which has the predicate similarities. For each predicate, its local and global similarities to other predicates are listed.
 
