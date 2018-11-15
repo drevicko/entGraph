@@ -12,7 +12,7 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 **Step 3**: Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
 
-**Step 4**: You can simply download the linked and parsed NewsSpike corpus (NewsSpike_CCG_parsed.json) to your preferred location and skip to step 5, or do steps 4.1 to 4.5 to parse and link the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
+**Step 4**: You can simply download the linked and parsed NewsSpike corpus (NewsSpike_CCG_parsed.json) to your preferred location and skip to step 5. For more information on the parsing format, please see parsing_readme.txt. Alternatively, follow steps 4.1 to 4.5 to parse and link the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
 
 **Step 4.1**: Download the NewsSpike Corpus from http://www.cs.washington.edu/ai/clzhang/release.tar.gz and copy the data folder inside entGraph.
    
