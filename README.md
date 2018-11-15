@@ -2,10 +2,12 @@ This is the implementation for the following paper:
 
 Learning Typed Entailment Graphs with Global Soft Constraints, Mohammad Javad Hosseini, Nathanael Chambers, Siva Reddy, Xavier Holt, Shay B. Cohen, Mark Johnson, and Mark Steedman. Transactions of the Association for Computational Linguistics (TACL 2018).
 
-### Running
+All the data can be downloaded from https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/ except specified otherwise.
 
-Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments. You can download all the additional necessary data from from https://worksheets.codalab.org/worksheets/0x8684ad8e95e24c4d80074278bce37ba4/ except specified otherwise.
 
+### How to Run the Code
+
+Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments.
 **Step 1**: Clone the entGraph project
 
 **Step 2**: Download and add lib and lib_data folders inside the entGraph folder.
@@ -63,7 +65,7 @@ A few more parameters in constants.ConstantsSoftConst:
   1. numThreads, which I set that to 60 for a machine with 20 cpus, because not all the threads will run together. But you might need to change it.
   2. numIters is the number of iterations. lambda, lambda_2 and tau are set by default for Cross-Graph + Paraphrase-Resolution global soft constraints experiments, but can be tuned for another dataset.
 
-### Learned Entailment Graphs
+### Download Learned Entailment Graphs
 
 **Global Entailment Scores**: The globally consistent entailment scores are in "global_graphs.tar.gz".
 
