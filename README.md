@@ -10,11 +10,11 @@ All the data can be downloaded from the project's codalab page https://worksheet
 Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments.
 
 
-**Step 1**: Clone the entGraph project
+**Step 1**: Clone the entGraph project.
 
-**Step 2**: Download and add lib and lib_data folders as well as prepositions.txt and stops.txt inside the entGraph folder.
+**Step 2**: Download (and decompress), lib, lib_data and data folders inside the entGraph folder.
 
-**Step 3**: Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
+**Step 3**: Compile the Java files. One way would be to create a project in eclipse named entGraph with workspace set to the download location of the source file.
 
 **Step 4**: You can simply download the linked and parsed NewsSpike corpus (NewsSpike_CCG_parsed.tar.gz) to your preferred location and skip to step 5. For more information on the parsing format, please see parsing_readme.txt. Alternatively, follow steps 4.1 to 4.5 to parse and link the NewsSpike corpus (or your own corpus) into predicate argument structure using the graph-parser (developped by Siva Reddy) based on CCG parser (easyCCG).
 
