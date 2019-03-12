@@ -8,9 +8,11 @@ All the data can be downloaded from the project's codalab page https://worksheet
 ### How to Run the Code
 
 Please follow the below instructions to create entailment graphs and/or replicate the paper's experiments.
+
+
 **Step 1**: Clone the entGraph project
 
-**Step 2**: Download and add lib and lib_data folders inside the entGraph folder.
+**Step 2**: Download and add lib and lib_data folders as well as prepositions.txt and stops.txt inside the entGraph folder.
 
 **Step 3**: Create a folder called freebase_types inside the entGraph folder and copy entity2Types.txt to it.
 
