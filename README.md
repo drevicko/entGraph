@@ -12,7 +12,7 @@ Please follow the below instructions to create entailment graphs and/or replicat
 
 **Step 1**: Clone the entGraph project.
 
-**Step 2**: Download (and decompress), lib, lib_data and data folders inside the entGraph folder.
+**Step 2**: Download (and decompress) lib, lib_data and data folders inside the entGraph folder.
 
 **Step 3**: Compile the Java files. In this step, it's assumed a remote machine (server) is used to run the code and a local machine (PC or laptop) is used to compile the code. One way would be to create a project in eclipse named entGraph with the workspace set to the directory that contains entGraph (in the local machine). From step 2, only the lib folder is needed for compilation. Then, the automatically created bin folder needs to be copied to the server that the code will be executed on. The rest will be done on the remote machine.
 
