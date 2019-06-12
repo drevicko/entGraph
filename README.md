@@ -53,6 +53,8 @@ You might need to set a few parameters in constants.ConstantsAgg:
   3. relAddress is the output of step 4.
 
   4. simsFolder is where the final output will be stored.
+  
+  5. rawExtractions should be True to parse news_gen.json as generated in Step 4
 
 You need to run the entailment.vector.EntailGraphFactoryAggregator using:
 
